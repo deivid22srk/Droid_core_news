@@ -7,6 +7,99 @@ import { Post } from '../types';
 
 export const MOCK_POSTS: Post[] = [
   {
+    id: 'todas-versoes-winlator',
+    title: 'Todas as versão do winlator',
+    excerpt: 'Lista completa de todas as versões oficiais do Winlator, forks populares (Ludashi, CMOD, XR, Mali) e alternativas como GameHub e GameNative.',
+    content: `O Winlator continua sendo a principal solução para rodar jogos Windows no Android. Confira abaixo todas as versões lançadas até hoje, incluindo forks da comunidade e alternativas consolidadas.
+
+## 📱 Versões Oficiais do Winlator
+
+| Versão | Data | Principais Novidades |
+|--------|------|---------------------|
+| **v11.0** | Set 2025 | Gladio (suporte Mali), HUD Mode, múltiplos controladores, Wine 10.10 |
+| **v10.1** | Jul 2025 | Suporte MIDI, modo PiP, drive CD-ROM virtual, Steam Client |
+| **v10.0** | Fev 2025 | GLIBC nativo, driver Vortek, TextureCompressionBC |
+| **v9.0** | Jan 2025 | Driver Vortek experimental, instalação modular |
+| **v8.0** | Set 2024 | Gerenciador de arquivos, efeitos de tela, DXVK 2.4.1 |
+| **v7.1** | Jun 2024 | Plugin ALSA atualizado, correções de áudio |
+| **v7.0** | Jun 2024 | WoW64, VKD3D (DX12), XInput aprimorado |
+| **v6.1** | Abr 2024 | Suporte XR (Realidade Virtual) |
+| **v6.0** | Mar 2024 | Lupa, wallpaper customizável, APK unificado |
+| **v5.0** | Fev 2024 | Temas personalizáveis, correção GTA V |
+| **v4.0** | Jan 2024 | DirectInput/XInput nativo |
+| **v3.2** | Dez 2023 | Cursor x11, presets Box86/64 |
+| **v3.1** | Nov 2023 | Velocidade cursor ajustável |
+| **v3.0** | Nov 2023 | PulseAudio, resolução customizável |
+| **v2.0** | Out 2023 | Primeira versão pública estável |
+
+## 🔀 Forks Populares
+
+### Winlator Ludashi (v2.9 - Mar 2026)
+- FPS HUD avançado (GPU, CPU, Watts, Temp)
+- Limitador de FPS universal
+- Filtros: Super Resolution, DLSS, HDR, CRT
+- Direct Rendering Mode
+- DXVK Sarek para Mali
+
+### Winlator-CMOD (Builds diárias)
+- Estabilidade e performance equilibradas
+- Suporte BCn via compute shader (Mali)
+- Variantes glibc e bionic
+- Atualizações frequentes do Box64/Mesa
+
+### WinlatorXR (blit16 - Abr 2026)
+- Foco em Realidade Virtual/Mista
+- Suporte a headsets OpenXR e Play for Dream MR
+- XrAPI 0.2
+- Baseado no CMOD v13
+
+### Winlator Mali (v2.0 - Nov 2024)
+- Otimizado para GPUs Mali-G7x
+- Drivers Turnip adaptados
+- Ideal para MediaTek/Exynos
+
+### Winlator AMod (Múltiplas variantes)
+- Wine Staging 10.15 com Vulkan
+- Suporte WOW64 aprimorado
+- Patches Termux específicos
+
+## 🎮 Alternativas Consolidadas
+
+### GameNative (v0.9.0 - Abr 2026)
+Cliente nativo para Steam, Epic, GOG e Amazon no Android:
+- Integração completa com múltiplas lojas
+- Steam Workshop implementado
+- Samsung DeX support
+- Gerenciador de downloads e armazenamento
+- Layout carrossel
+- Conquistas em tempo real
+- Suporte a controles customizáveis
+- OpenAL Soft Audio
+- PowerVR GPU support (Pixel 10)
+
+### GameHub
+Focado em esquemas de controle e otimização:
+- Configurações manuais para títulos AAA
+- Perfis de performance para série GTA
+- Mapeamento controller-teclado/mouse
+
+## 🔗 Links Oficiais
+
+- **Winlator Oficial**: [github.com/brunodev85/winlator](https://github.com/brunodev85/winlator)
+- **Ludashi**: [github.com/StevenMXZ/Winlator-Ludashi](https://github.com/StevenMXZ/Winlator-Ludashi)
+- **CMOD**: [github.com/Stredohori/Winlator-CMOD](https://github.com/Stredohori/Winlator-CMOD)
+- **WinlatorXR**: [github.com/WinlatorXR/WinlatorXR](https://github.com/WinlatorXR/WinlatorXR)
+- **GameNative**: [github.com/utkarshdalal/GameNative](https://github.com/utkarshdalal/GameNative)
+
+**Recomendação rápida**: Snapdragon → Winlator v11.0 ou Ludashi | Mali → Winlator v11.0 com Gladio ou Mali fork | VR → WinlatorXR | Multi-lojas → GameNative`,
+    category: 'Emuladores',
+    author: 'Droid_Core Team',
+    date: '26 Abr 2026',
+    imageUrl: 'https://raw.githubusercontent.com/deivid22srk/DROID_CORE_IMAGES/refs/heads/main/winlator-all-versions-history.png',
+    readTime: '5 min',
+    isFeatured: true,
+  },
+  {
     id: 'gemini-cli-termux-tutorial',
     title: 'Gemini CLI no Termux: IA do Google no seu Android',
     excerpt: 'Transforme seu Termux em uma central de inteligência artificial com o Gemini CLI. Guia rápido de instalação e configuração.',
@@ -46,7 +139,7 @@ Agora é só rodar gemini e começar a usar! O Gemini CLI suporta análise de ar
     date: '26 Abr 2026',
     imageUrl: 'https://raw.githubusercontent.com/deivid22srk/DROID_CORE_IMAGES/refs/heads/main/gemini_cli_termux.png',
     readTime: '3 min',
-    isFeatured: true,
+    isFeatured: false,
   },
   {
     id: 'proton-11-arm64-revolution',
