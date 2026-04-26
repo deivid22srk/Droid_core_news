@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,900;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  
+  --color-editorial-bg: #FDFCFB;
+  --color-editorial-ink: #121212;
+  --color-editorial-accent: #C2410C;
+  --color-editorial-line: #EAE8E4;
+}
+
+.dark {
+  --color-editorial-bg: #0A0A0A;
+  --color-editorial-ink: #F5F5F5;
+  --color-editorial-accent: #FB923C;
+  --color-editorial-line: #262626;
+}
+
+@layer base {
+  body {
+    @apply bg-editorial-bg text-editorial-ink antialiased selection:bg-editorial-accent selection:text-white transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .editorial-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .editorial-border-b {
+    @apply border-b border-editorial-line;
+  }
+  
+  .editorial-border-r {
+    @apply border-r border-editorial-line;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-editorial-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-editorial-line hover:bg-editorial-ink/20 transition-colors rounded-full;
+  }
+}
